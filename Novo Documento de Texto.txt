@@ -1,0 +1,21 @@
+animal : especie, nomeBioterio
+
+docente ; $(matricula, nome, nascimento, sexo,titulacao) *(doutor, assistente, livre-docente ou titular)*,  
+
+protocolo ; status*(aguardando envio para parecer, aguardando parecer, aprovacao final), nomeBioterio,  justificativa, resumoport, resumoing, dataini, datafim(nao pode cair em feriado e/ou fins de semana), especie, qtdPorEspecie
+
+bioterio ; campus(bioteriomed, bioteriofarma, bioterioquim), especieAnimal, qtdPorEspecie;   
+
+comissão ; protocolo, membrosComissao
+
+secretariaComissao ; emissaoCertificado, aprovado?, malote
+
+presidente ; $docente, aprovado?, jutificativa,  
+
+parecerista ; $docente, protocolo, emitirParecer, usoRecomendado?
+
+vice-presidente ; $docente 
+
+pesquisador ; $docente,
+
+malote ; protocolo; emissaoCertificado
